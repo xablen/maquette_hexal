@@ -1,0 +1,40 @@
+/* Général */
+
+header {
+	background-color: #323232;
+	height: 60px;
+	margin-top: -20px;
+}
+
+header .container .left {
+	margin-left: 100px;
+}
+header .container .right {
+	margin-left: -30px;
+}
+
+header .container .shape {
+	margin-top: -30px;
+}
+
+.navbar-nav ul {
+    list-style-type : none;	
+}
+
+.navbar-nav ul li {
+	display: inline; 
+}
+
+header .container .col-md-1 {
+	margin-left: -100px;
+	margin-right: 100px;
+}
+
+:hover a {
+	color: #cc04c2;
+	background-color: #000000;
+}
+
+.shape {
+	padding: 0 50% 0 50%;
+}
