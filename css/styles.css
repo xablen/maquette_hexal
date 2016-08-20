@@ -122,14 +122,10 @@ h1, h2 {margin:0;}
 	color: white !important;
 }
 
-
-footer {
-	background: #222222;
-	height: 45px;}
-
 input {
 	display:block;
 	float:right;
+	font-family: 'Lato-Regular', Arial, serif !important;
 }
 
 input[type=mail], input[type=name], input[type=subject] {
@@ -157,23 +153,38 @@ input[type=mail], input[type=name], input[type=subject] {
 	margin-bottom: 10px;
 }
 
-.message {
-}
-
 .send {
 	background: #2eb398;
 	margin-bottom: 10px;
 }
 
-#contact .col-md-6 {
+#contact .left {
   margin-top: 70px;
 }
 
-#contact .container .col-md-6 {
-	padding:0;
+.col-md-6 {
+	padding-left: 0px;
 }
 
 #contact h1 {
+	font-family: 'MavenPro-Regular', Arial, serif !important;
 	padding-left: 0px;
+	margin: 0;
 	text-align: left;
+}
+
+#contact h3 {
+	font-family: 'MavenPro-Regular', Arial, serif !important;
+	font-size: 20px;
+	padding-bottom: 25px;
+	margin:0;
+}
+
+#contact p {
+    text-align: justify;
+}
+
+footer {
+	background: #222222;
+	height: 45px;
 }
