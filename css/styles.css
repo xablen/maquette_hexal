@@ -1,40 +1,101 @@
 /* Général */
 
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x:hidden;
+}
+
 header {
 	background-color: #323232;
-	height: 60px;
+	height: 83px;
+}
+
+header .container {
+	height: 120px;
 	margin-top: -20px;
 }
 
-header .container .left {
-	margin-left: 100px;
-}
-header .container .right {
-	margin-left: -30px;
+header .container {
+	padding-top: 20px;
 }
 
-header .container .shape {
-	margin-top: -30px;
+.img-logo1 {
+	margin-top: -9px;
+}
+
+.navbar-nav  a {
+	font-family: 'Lato-Bold', Arial, serif !important;
+	color: white; 
+}
+
+.nona a {
+	color: white !important;
+}
+
+.right .navbar-nav {
+	color: white;
 }
 
 .navbar-nav ul {
     list-style-type : none;	
+    margin:0;
 }
 
 .navbar-nav ul li {
-	display: inline; 
+	display: inline-block;
 }
 
-header .container .col-md-1 {
-	margin-left: -100px;
-	margin-right: 100px;
+header .navbar-nav :hover a {
+	color: #2eb398;
+	background:transparent !important;
 }
 
-:hover a {
-	color: #cc04c2;
-	background-color: #000000;
+#section_one {
+	margin-top: 90px;
+	margin-bottom: 90px;
 }
 
-.shape {
-	padding: 0 50% 0 50%;
+#about {
+	background-color: #2eb398;
+	height: 438px;
+	padding-top: 70px;
+}
+
+#about .container {
+}
+
+#about .img-responsive {
+	background-size: cover;
+	width: 980px;
+	height: 207px;
+}
+
+#about h1 {
+	color:white !important;
+}
+#about h2 {
+	color: #2f917d !important;
+}
+
+#about p {
+	text-align: justify;
+	color: white !important;
+}
+
+#about .col-md-8 {
+	margin-left: 300px;
+}
+
+#about .description {
+	padding-right: 150px;
+}
+
+#about img {
+	float:right;
 }
