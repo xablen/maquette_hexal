@@ -15,11 +15,21 @@
     src: url('../fonts/MavenPro-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/Lato-Black.ttf') format('truetype');
+}
+
 html,
 body {
     height: 100%;
     overflow-x:hidden;
 }
+
+h1, h2 {margin:0;
+}
+
+/* Header */
 
 header {
 	background-color: #323232;
@@ -35,7 +45,7 @@ header .container {
 	padding-top: 20px;
 }
 
-.img-logo1 {
+.img-logo {
 	margin-top: -9px;
 }
 
@@ -66,10 +76,14 @@ header .navbar-nav :hover a {
 	background:transparent !important;
 }
 
-#section_one {
+/*Section 1: portefolio*/
+
+#portefolio {
 	margin-top: 90px;
 	margin-bottom: 90px;
 }
+
+/*Section 2: A propos */
 
 #about {
 	background-color: #2eb398;
@@ -77,16 +91,11 @@ header .navbar-nav :hover a {
 	padding-top: 70px;
 }
 
-#about .container {
-}
-
 #about .img-responsive {
 	background-size: cover;
 	width: 980px;
 	height: 207px;
 }
-
-h1, h2 {margin:0;}
 
 #about h1 {
 	font-family: 'MavenPro-Regular', Arial, serif !important;
@@ -104,17 +113,11 @@ h1, h2 {margin:0;}
 	color: white !important;
 }
 
-#about .col-md-8 {
-	margin-left: 300px;
-}
-
-#about .description {
-	padding-right: 150px;
-}
-
 #about img {
 	float:right;
 }
+
+/*Section 3: Contact*/
 
 #contact {
 	background: #323232;
@@ -123,30 +126,10 @@ h1, h2 {margin:0;}
 }
 
 input {
-	display:block;
+	display:inline-block;
 	float:right;
 	font-family: 'Lato-Regular', Arial, serif !important;
 }
-
-input[type=mail], input[type=name], input[type=subject] {
- border: none;
- height: 40px;
- width: 580px;
- }
-
- input[type=message] {
- border: none;
- height: 150px;
- width: 580px;
-
- }
-
- input[type=send] {
- border: none;
- height: 40px;
- width: 90px;
- text-align: center;
- }
 
 .name, .mail, .subject, .message {
 	background: #454545;
@@ -162,29 +145,227 @@ input[type=mail], input[type=name], input[type=subject] {
   margin-top: 70px;
 }
 
-.col-md-6 {
-	padding-left: 0px;
-}
-
 #contact h1 {
 	font-family: 'MavenPro-Regular', Arial, serif !important;
-	padding-left: 0px;
 	margin: 0;
-	text-align: left;
+	text-align: left !important;
 }
 
 #contact h3 {
 	font-family: 'MavenPro-Regular', Arial, serif !important;
+	color: #575757 !important;
 	font-size: 20px;
 	padding-bottom: 25px;
 	margin:0;
+	text-align: left !important;
 }
 
 #contact p {
+	font-family: 'Lato-Regular', Arial, serif !important;
     text-align: justify;
 }
+
+#contact span {
+	font-family: 'Lato-Black', Arial, serif !important;
+}
+
+/*footer*/
 
 footer {
 	background: #222222;
 	height: 45px;
+}
+
+
+/* Styles pour les écrans de taille large et moyenne  */
+
+@media (min-width: 993px) {
+ .container {
+   width: 1080px;
+ }
+
+/*Section 2: A propos */
+
+#about .col-md-8 {
+	margin-left: 300px;
+}
+
+#about .description {
+	padding-right: 150px;
+}
+
+/*Section 3: Contact*/
+
+input[type=mail], input[type=name], input[type=subject] {
+ border: none;
+ height: 40px;
+ width: 555px;
+ }
+
+ input[type=message] {
+ border: none;
+ height: 150px;
+ width: 555px;
+
+ }
+
+ input[type=send] {
+ border: none;
+ height: 40px;
+ width: 90px;
+ text-align: center;
+ }
+
+#contact .col-md-6 {
+	padding-left:0;
+}
+}
+
+/* Styles pour les tablettes */
+
+@media (min-width: 768px) and (max-width: 992px){
+
+/* Header */
+
+.navbar-nav  a {
+	font-family: 'Lato-Bold', Arial, serif !important;
+	font-size: 10px; 
+}
+
+.nona a {
+	color: white !important;
+	font-size: 10px; 
+}
+
+/*Section 3: Contact*/
+
+#contact h1 {
+	font-size: 40px;
+}
+
+#contact h3 {
+	font-size: 13px;
+}
+
+#contact p {
+	font-family: 'Lato-Regular', Arial, serif !important;
+    text-align: justify;
+    font-size: 13px;
+}
+
+#contact span {
+	font-family: 'Lato-Black', Arial, serif !important;
+	font-size: 13px;
+}
+
+
+input[type=mail], input[type=name], input[type=subject] {
+	border: none;
+ 	height: 40px;
+ 	width: 350px;
+}
+
+input[type=message] {
+	border: none;
+ 	height: 40px;
+ 	width: 350px;
+}
+
+input[type=send] {
+ border: none;
+ height: 40px;
+ width: 90px;
+ text-align: center;
+}
+
+
+#contact .col-sm-6 {
+	padding-left:0;
+}
+
+}
+
+/* Styles pour les smartphones */
+
+@media (max-width: 767px) {
+
+header img {
+	visibility:hidden;
+}
+
+/* Header */
+
+header {
+	height: 183px;
+}
+
+.navbar-nav  a {
+	font-family: 'Lato-Bold', Arial, serif !important;
+	font-size: 20px; 
+		text-align: center; 
+}
+
+.nona a {
+	visibility:hidden;
+}
+
+.navbar-nav ul li {
+	display: block;
+}
+
+#about {
+	height: 688px;
+}
+
+
+#about .description {
+	margin-top: 250px;
+}
+
+/*Section 3: Contact*/
+
+#contact h1 {
+	font-size: 40px;
+}
+
+#contact h3 {
+	font-size: 13px;
+}
+
+#contact p {
+	font-family: 'Lato-Regular', Arial, serif !important;
+    text-align: justify;
+    font-size: 13px;
+}
+
+#contact span {
+	font-family: 'Lato-Black', Arial, serif !important;
+	font-size: 13px;
+}
+
+
+input[type=mail], input[type=name], input[type=subject] {
+	border: none;
+ 	height: 40px;
+ 	width: 310px;
+}
+
+input[type=message] {
+	border: none;
+ 	height: 40px;
+ 	width: 310px;
+}
+
+input[type=send] {
+ border: none;
+ height: 40px;
+ width: 90px;
+ text-align: center;
+}
+
+
+#contact .col-xs-6 {
+	padding-left:0;
+}
+
 }
